@@ -162,6 +162,9 @@ input:focus-within {
   .bg-home{
     background: #F7F6F0;
   }
+  .bg-modal{
+    background-color: rgba(139, 122, 122, 0.6);
+  }
   .text-white {
     color: #fff !important;
   }
@@ -247,5 +250,11 @@ input:focus-within {
   }
   .index-30{
     z-index: 30000;
+  }
+  .index-40{
+    z-index: 40000;
+  }
+  .index-50{
+    z-index: 50000;
   }
 }

@@ -8,6 +8,7 @@ import LoanInterestChart from '@/components/admin/loan/charts/LoanInterest';
 import { BsFilter } from 'react-icons/bs';
 import LoanInsuranceTable from '@/components/admin/loan/tables/LoanInsurance';
 import LoanRepayTable from '@/components/admin/loan/tables/LoanRepay';
+import Link from 'next/link';
 
 const LoanPage = () => {
   return (
@@ -19,7 +20,10 @@ const LoanPage = () => {
                     <div className='p-8 pl-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Loan Status</p>
-                            <p className='px-2 border border-gray-300 flex fw-500 items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                            <select className='px-2 border border-gray-300 rounded fs-500'>
+                                <option>All Time</option>
+                                <option>Yearly</option>
+                            </select>
                         </div>
                         <div className='mt-8 pl-2'>
                             <LoanStatusChart/>
@@ -28,7 +32,10 @@ const LoanPage = () => {
                     <div className='p-8 pl-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Request and Approval</p>
-                            <p className='px-2 border border-gray-300 flex fw-500 items-center fs-500'>Yearly <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                            <select className='px-2 border border-gray-300 rounded fs-500'>
+                                <option>All Time</option>
+                                <option>Yearly</option>
+                            </select>
                         </div>
                         <div className='pl-2 mt-8'>
                             <ReqAppChart/>
@@ -39,7 +46,10 @@ const LoanPage = () => {
                     <div className='p-8 pl-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Loan Fees</p>
-                            <p className='px-2 border border-gray-300 flex fw-500 items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                            <select className='px-2 border border-gray-300 rounded fs-500'>
+                                <option>All Time</option>
+                                <option>Yearly</option>
+                            </select>
                         </div>
                         <div className='mt-8 pl-2'>
                             <LoanFeesChart/>
@@ -48,7 +58,10 @@ const LoanPage = () => {
                     <div className='p-8 pl-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Loan Interest</p>
-                            <p className='px-2 border border-gray-300 flex fw-500 items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                            <select className='px-2 border border-gray-300 rounded fs-500'>
+                                <option>All Time</option>
+                                <option>Yearly</option>
+                            </select>
                         </div>
                         <div className='pl-2 mt-8'>
                             <LoanInterestChart/>
@@ -62,7 +75,10 @@ const LoanPage = () => {
                     <div className='p-8 pl-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Loan Status</p>
-                            <p className='px-2 border border-gray-300 flex fw-500 items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                            <select className='px-2 border border-gray-300 rounded fs-500'>
+                                <option>All Time</option>
+                                <option>Yearly</option>
+                            </select>
                         </div>
                         <div className='mt-8 pl-2'>
                             <LoanStatusChart/>
@@ -71,7 +87,10 @@ const LoanPage = () => {
                     <div className='p-8 pl-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Request and Approval</p>
-                            <p className='px-2 border border-gray-300 flex fw-500 items-center fs-500'>Yearly <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                            <select className='px-2 border border-gray-300 rounded fs-500'>
+                                <option>Yearly</option>
+                                <option>Monthly</option>
+                            </select>
                         </div>
                         <div className='pl-2 mt-8'>
                             <ReqAppChart/>
@@ -82,7 +101,10 @@ const LoanPage = () => {
                     <div className='p-8 pl-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Loan Fees</p>
-                            <p className='px-2 border border-gray-300 flex fw-500 items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                            <select className='px-2 border border-gray-300 rounded fs-500'>
+                                <option>All Time</option>
+                                <option>Yearly</option>
+                            </select>
                         </div>
                         <div className='mt-8 pl-2'>
                             <LoanFeesChart/>
@@ -91,7 +113,10 @@ const LoanPage = () => {
                     <div className='p-8 pl-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Loan Interest</p>
-                            <p className='px-2 border border-gray-300 flex fw-500 items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                            <select className='px-2 border border-gray-300 rounded fs-500'>
+                                <option>All Time</option>
+                                <option>Yearly</option>
+                            </select>
                         </div>
                         <div className='pl-2 mt-8'>
                             <LoanInterestChart/>
@@ -103,7 +128,7 @@ const LoanPage = () => {
                 <div className='flex items-center justify-between'>
                     <p className='text-xl text-gray-500 fw-600'>Loan Insurance</p>
                     <div className='flex items-center'>
-                        <p className='text-primary fw-600'>See all</p>
+                        <Link href='/loans' className='text-primary fw-600'>See all</Link>
                         <p className='flex items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>Filter <BsFilter className='ml-1'/></p>
                     </div>
                 </div>
@@ -115,7 +140,7 @@ const LoanPage = () => {
                 <div className='flex items-center justify-between'>
                     <p className='text-xl text-gray-500 fw-600'>Loan Repayment</p>
                     <div className='flex items-center'>
-                        <p className='text-primary fw-600'>See all</p>
+                        <Link href='/loans' className='text-primary fw-600'>See all</Link>
                         <p className='flex items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>Filter <BsFilter className='ml-1'/></p>
                     </div>
                 </div>

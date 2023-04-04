@@ -7,6 +7,7 @@ import TopSpendTable from '@/components/admin/Spend/tables/TopSpend';
 import SpendCatChart from '@/components/admin/Spend/Charts/SpendCat';
 import SpendersDataTable from '@/components/admin/Spend/tables/SpenderData';
 import { BsFilter } from 'react-icons/bs';
+import Link from 'next/link';
 
 const SpendPage = () => {
   return (
@@ -19,7 +20,10 @@ const SpendPage = () => {
                         <div className='p-8 pl-0 bg-white shade rounded-md'>
                             <div className='pl-8 flex items-center justify-between'>
                                 <p className='text-xl fw-600'>Total Spend</p>
-                                <p className='px-2 border border-gray-200 rounded flex fw-500 items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                                <select className='px-2 border border-gray-300 rounded fs-500'>
+                                    <option>All Time</option>
+                                    <option>Yearly</option>
+                                </select>
                             </div>
                             <div className='mt-8 pl-2'>
                                 <TotalSpendChart/>
@@ -28,7 +32,10 @@ const SpendPage = () => {
                         <div className='p-8 pl-0 mt-6 bg-white shade rounded-md'>
                             <div className='pl-8 flex items-center justify-between'>
                                 <p className='text-xl fw-600'>Successful Categories</p>
-                                <p className='px-2 border border-gray-200 rounded flex fw-500 items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                                <select className='px-2 border border-gray-300 rounded fs-500'>
+                                    <option>All Time</option>
+                                    <option>Yearly</option>
+                                </select>
                             </div>
                             <div className='mt-8 pl-2'>
                                 <SuccessfulCatChart/>
@@ -41,8 +48,11 @@ const SpendPage = () => {
                         <div className='flex items-center justify-between'>
                             <p className='text-xl fw-600'>Top Spenders</p>
                             <div className='flex items-center'>
-                                <p className='fs-700 text-primary fw-500 mr-6'>See All</p>
-                                <p className='px-2 border border-gray-300 flex items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                                <Link href='/spend/top-spenders' className='fs-700 text-primary fw-500 mr-6'>See All</Link>
+                                <select className='px-2 border border-gray-300 rounded fs-500'>
+                                    <option>All Time</option>
+                                    <option>Yearly</option>
+                                </select>
                             </div>
                         </div>
                         <div>
@@ -55,7 +65,10 @@ const SpendPage = () => {
                 <div className='flex items-center justify-between'>
                     <p className='text-xl fw-600 text-gray-500'>Spend Categories</p>
                     <div className='flex items-center'>
-                        <p className='px-2 border border-gray-300 flex items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p>
+                        <select className='px-2 border border-gray-300 rounded fs-500'>
+                            <option>All Time</option>
+                            <option>Yearly</option>
+                        </select>
                     </div>
                 </div>
                 <div className='mt-7'>
