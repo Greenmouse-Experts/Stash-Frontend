@@ -20,7 +20,7 @@ const Register = () => {
 
   return (
     <div>
-        <div className="lg:bg-secondary min-h-screen font-primary" >
+        <div className="bg-secondary min-h-screen font-primary" >
             <div className="flex lg:py-16 text-sm min-h-screen items-center justify-center">
                 <div className="lg:w-5/12 rounded w-11/12">
                     <Link href='/'>

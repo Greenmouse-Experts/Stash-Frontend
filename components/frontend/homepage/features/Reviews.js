@@ -44,7 +44,7 @@ const Reviews = () => {
                                         <p className='fw-500 fs-500 ml-3'>Gbenga John Osukoya</p>
                                     </div>
                                 </div>
-                                <div className='w-96 h-80 rounded-lg bg-white p-8 grid content-between'>
+                                <div className='w-96 h-80 hidden rounded-lg bg-white p-8 lg:grid content-between'>
                                     <div>
                                         <p className='text-gray-500 fs-500'>I had an awesome experience with carbon, very reliable n trustworthy, infact d instalmental repayment is d tip of d iceberg. I hereby recommend this LOAN APP among apps...CARBON to all prospective borrower, u will never be disappointed.</p>
                                     </div>
@@ -53,7 +53,7 @@ const Reviews = () => {
                                         <p className='fw-500 fs-500 ml-3'>Gbenga John Osukoya</p>
                                     </div>
                                 </div>
-                                <div className='w-96 h-80 rounded-lg bg-white p-8 grid content-between'>
+                                <div className='w-96 h-80 hidden rounded-lg bg-white p-8 lg:grid content-between'>
                                     <div>
                                         <p className='text-gray-500 fs-500'>I had an awesome experience with carbon, very reliable n trustworthy, infact d instalmental repayment is d tip of d iceberg. I hereby recommend this LOAN APP among apps...CARBON to all prospective borrower, u will never be disappointed.</p>
                                     </div>

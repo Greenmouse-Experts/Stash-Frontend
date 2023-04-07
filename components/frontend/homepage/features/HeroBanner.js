@@ -7,12 +7,12 @@ const HeroBanner = () => {
     <div>
         <div className='section'>
             <div className='box'>
-                <div className='lg:w-11/12 mx-auto flex items-center flex-row-reverse'>
-                    <div className='w-6/12'>
+                <div className='lg:w-11/12 mx-auto lg:flex items-center flex-row-reverse'>
+                    <div className='lg:w-6/12'>
                         <Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1679500703/Stash/Stash_gxndry.png' alt='banner' width={800} height={800} className='w-10/12 '/>
                     </div>
-                    <div className='w-6/12 lg:mb-16'>
-                        <p className='lg:text-7xl fw-700'>Digital Banking with you in mind</p>
+                    <div className='lg:w-6/12 lg:mb-16'>
+                        <p className='lg:text-7xl text-2xl fw-700'>Digital Banking with you in mind</p>
                         <p className='mt-7 fw-500 xl:w-10/12'>Stash is a digital banking app that helps users  spend, save, borrow and manage money effortlessly.</p>
                         <div className='mt-6 flex'>
                             <div className='w-24 lg:w-36 h-7 lg:h-10 overflow-hidden'>

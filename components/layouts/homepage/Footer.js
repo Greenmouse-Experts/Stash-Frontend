@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
       <div className='pt-16'>
         <div className='box'>
-          <div className='grid grid-cols-6 gap-x-12'>
+          <div className='grid grid-cols-2 lg:grid-cols-6 gap-y-8 gap-x-12'>
             <div>
               <Link href='/'>
                   <Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1679500697/Stash/Group_48096160_vvslzo.png' alt='logo' width={300} height={300} className='w-36 lg:w-44'/>
@@ -64,7 +64,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className='mt-12 flex items-center justify-between'>
+          <div className='mt-12 lg:flex items-center justify-between'>
             <div className='mt-6 flex'>
                 <div className='w-24 lg:w-28 h-6 lg:h-8 overflow-hidden'>
                     <Link href='/' >
@@ -77,7 +77,7 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
-            <div>
+            <div className='mt-8 lg:mt-0'>
               <ul className='flex'>
                 <li className=''><Link href='/'><Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1679659088/Stash/6194b7fcf08b5f10239cf68e_008-facebook.svg_hiqtxl.png' alt='banner' width={100} height={100} className='w-6'/></Link></li>
                 <li className=' ml-3'><Link href='/'><Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1679659088/Stash/6194b7fcf08b5fe49c9cf68c_001-twitter.svg_arydlo.png' alt='banner' width={100} height={100} className='w-6'/></Link></li>

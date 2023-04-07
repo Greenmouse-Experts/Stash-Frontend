@@ -7,11 +7,11 @@ const Features = () => {
     <div>
         <div className='section'>
             <div className='box'>
-                <div className='w-11/12 mx-auto flex items-center'>
-                    <div className='w-6/12 lg:pr-12'>
+                <div className='lg:w-11/12 mx-auto lg:flex items-center'>
+                    <div className='lg:w-6/12 lg:pr-12'>
                         <div className='h-96 w-full bg-light'></div>
                     </div>
-                    <div className='w-6/12 lg:pl-6'>
+                    <div className='lg:w-6/12 mt-6 lg:mt-0 lg:pl-6'>
                         <span className='px-3 py-2 fs-300 fw-500 bg-milk'>Fast Payments</span>
                         <div className='my-8'>
                             <p className='text-4xl fw-600'>Enjoy seamless payments, at little or no cost</p>
@@ -25,11 +25,11 @@ const Features = () => {
                         </p>
                     </div>
                 </div>
-                <div className='w-11/12 mx-auto flex flex-row-reverse items-center pt-36'>
-                    <div className='w-6/12 lg:pr-12'>
+                <div className='lg:w-11/12 mx-auto lg:flex flex-row-reverse items-center pt-12 lg:pt-36'>
+                    <div className='lg:w-6/12 lg:pr-12'>
                         <div className='h-96 w-full bg-light'></div>
                     </div>
-                    <div className='w-6/12 lg:pl-6'>
+                    <div className='lg:w-6/12 mt-6 lg:mt-0 lg:pl-6'>
                         <span className='px-3 py-2 fs-300 fw-500 bg-milk'>Fast Payments</span>
                         <div className='my-8'>
                             <p className='text-4xl fw-600'>Enjoy seamless payments, at little or no cost</p>
@@ -43,11 +43,11 @@ const Features = () => {
                         </p>
                     </div>
                 </div>
-                <div className='w-11/12 mx-auto flex items-center pt-36'>
-                    <div className='w-6/12 lg:pr-12'>
+                <div className='lg:w-11/12 mx-auto lg:flex items-center pt-12 lg:pt-36'>
+                    <div className='lg:w-6/12 lg:pr-12'>
                         <div className='h-96 w-full bg-light'></div>
                     </div>
-                    <div className='w-6/12 lg:pl-6'>
+                    <div className='lg:w-6/12 mt-6 lg:mt-0 lg:pl-6'>
                         <span className='px-3 py-2 fs-300 fw-500 bg-milk'>Fast Payments</span>
                         <div className='my-8'>
                             <p className='text-4xl fw-600'>Enjoy seamless payments, at little or no cost</p>
@@ -61,11 +61,11 @@ const Features = () => {
                         </p>
                     </div>
                 </div>
-                <div className='w-11/12 mx-auto flex flex-row-reverse items-center pt-36'>
-                    <div className='w-6/12 lg:pr-12'>
+                <div className='lg:w-11/12 mx-auto lg:flex flex-row-reverse items-center pt-12 lg:pt-36'>
+                    <div className='lg:w-6/12 lg:pr-12'>
                         <div className='h-96 w-full bg-light'></div>
                     </div>
-                    <div className='w-6/12 lg:pl-6'>
+                    <div className='lg:w-6/12 mt-6 lg:mt-0 lg:pl-6'>
                         <span className='px-3 py-2 fs-300 fw-500 bg-milk'>Fast Payments</span>
                         <div className='my-8'>
                             <p className='text-4xl fw-600'>Enjoy seamless payments, at little or no cost</p>

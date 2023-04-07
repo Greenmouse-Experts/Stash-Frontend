@@ -6,16 +6,16 @@ const Future = () => {
     <div>
         <div className='section'>
             <div className='box'>
-                <div className='grid grid-cols-3 gap-x-12'>
+                <div className='lg:grid lg:grid-cols-3 gap-x-12'>
                     <div className='lg:mt-3'>
-                        <p className='fw-600 text-5xl'>The future of banking is digital</p>
+                        <p className='fw-600 text-xl lg:text-5xl'>The future of banking is digital</p>
                         <p className='mt-6'>Earn 5%-15% when you save with any of these PiggyVest plans.</p>
                         <div className='mt-7 text-white'>
                             <button className='px-6 py-3 fw-600 bg-black rounded-lg'>Start Saving</button>
                         </div>
                     </div>
-                    <div className='col-span-2 grid grid-cols-2 gap-12'>
-                        <div className='bg-light grid h-80 items-between rounded-md lg:p-8'>
+                    <div className='col-span-2 mt-8 lg:mt-0 grid md:grid-cols-2 gap-y-8 lg:gap-12'>
+                        <div className='bg-light grid h-80 items-between rounded-md p-6 lg:p-8'>
                             <Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1679648240/Stash/piggy_df88262015.png_h955za.png' alt='banner' width={800} height={800} className='w-12'/>
                             <div className=''>
                                 <p className='fw-600 mb-2'>Automated Savings</p>
@@ -26,7 +26,7 @@ const Future = () => {
                                 <p className='fw-500 pl-1'>Piggybank</p>
                             </div>
                         </div>
-                        <div className='bg-light grid h-80 items-between rounded-md lg:p-8'>
+                        <div className='bg-light grid h-80 items-between rounded-md p-6 lg:p-8'>
                             <Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1679648240/Stash/safelock_4e737ba7d3.png_jtbnbz.png' alt='banner' width={800} height={800} className='w-12'/>
                             <div className=''>
                                 <p className='fw-600 mb-2'>Fixed Savings</p>
@@ -37,7 +37,7 @@ const Future = () => {
                                 <p className='fw-500 pl-1'>Safelock</p>
                             </div>
                         </div>
-                        <div className='bg-light grid h-80 items-between rounded-md lg:p-8'>
+                        <div className='bg-light grid h-80 items-between rounded-md p-6 lg:p-8'>
                             <Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1679648240/Stash/target_6c049f3410.png_vrwj1y.png' alt='banner' width={800} height={800} className='w-12'/>
                             <div className=''>
                                 <p className='fw-600 mb-2'>Goal-oriented Savings</p>
@@ -48,7 +48,7 @@ const Future = () => {
                                 <p className='fw-500 pl-1'>Target Savings</p>
                             </div>
                         </div>
-                        <div className='bg-light  grid h-80 items-between  rounded-md lg:p-8'>
+                        <div className='bg-light  grid h-80 items-between  rounded-md p-6 lg:p-8'>
                             <Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1679648240/Stash/flex_d090f8bce2.png_qxxr3h.png' alt='banner' width={800} height={800} className='w-12'/>
                             <div className=''>
                                 <p className='fw-600 mb-2'>Flexible Savings</p>

@@ -19,7 +19,7 @@ const Login = () => {
 
   return (
     <div>
-        <div className="lg:bg-secondary min-h-screen font-primary" >
+        <div className="bg-secondary min-h-screen font-primary" >
             <div className="flex lg:pt-16 text-sm h-screen items-center justify-center">
                 <div className="lg:w-4/12 rounded shadow bg-white w-11/12 p-6 pb-8">
                     <Link href='/'>
@@ -50,9 +50,11 @@ const Login = () => {
                                 </p>
                             </div>
                             <div className='mt-12'>
-                                <button className='py-3 lg:text-lg w-full btn-primary'>
-                                    Login
-                                </button>
+                                <Link href='/admin'>
+                                    <button type='button' className='py-3 lg:text-lg w-full btn-primary'>
+                                        Login
+                                    </button>
+                                </Link>
                             </div>
                         </form>
                     </div>
