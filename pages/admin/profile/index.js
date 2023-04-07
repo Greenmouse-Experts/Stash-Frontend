@@ -13,7 +13,7 @@ const ProfilePage = () => {
                     <p className='fw-500 ml-6 text-primary cursor-pointer lg:text-lg'> Add picture</p>
                 </div>
                 <form>
-                    <div className='mt-8 border-b pb-12 grid grid-cols-3 gap-x-16'>
+                    <div className='mt-8 border-b pb-12 grid lg:grid-cols-3 gap-y-8 gap-x-16'>
                         <div>
                             <p className='fw-600 text-xl'>Edit Name</p>
                         </div>
@@ -26,11 +26,11 @@ const ProfilePage = () => {
                             <input type='text' className='p-3 rounded border mt-2 border-gray-400 w-full' placeholder='Timi'/>
                         </div>
                     </div>
-                    <div className='py-8  grid grid-cols-3 gap-x-16'>
+                    <div className='py-8  grid lg:grid-cols-3 gap-x-16'>
                         <div>
                             <p className='fw-600 text-xl'>Change Password</p>
                         </div>
-                        <div>
+                        <div className='mt-8 lg:mt-0'>
                             <div>
                                 <label className='fw-500 lg:fs-700 text-gray-500'>Old password</label>
                                 <input type='password' className='p-3 rounded border mt-2 border-gray-400 w-full'/>
@@ -40,7 +40,7 @@ const ProfilePage = () => {
                                 <input type='password' className='p-3 rounded border mt-2 border-gray-400 w-full'/>
                             </div>
                         </div>
-                        <div className='self-end'>
+                        <div className='self-end mt-8 lg:mt-0'>
                             <label className='fw-500 lg:fs-700 text-gray-500'>Confirm password</label>
                             <input type='text' className='p-3 rounded border mt-2 border-gray-400 w-full'/>
                         </div>

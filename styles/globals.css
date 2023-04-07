@@ -44,8 +44,8 @@ a {
 .ps-submenu-content{
   background-color: #6B5AED !important;
 }
-.css-12vkui9:hover{
-  background-color: none !important;
+.css-12vkui9 .ps-menu-button:hover{
+  background: none !important;
 }
 .ps-menuitem-root:hover{
   background-color: #6151DD !important;

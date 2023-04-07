@@ -15,10 +15,10 @@ import CardExpiryTable from '@/components/admin/save/tables/CardExpiry';
 import NairaDollarChart from '@/components/admin/save/charts/NairaDollar';
 import SaversDataTable from '@/components/admin/save/tables/SaversData';
 import WithdrawalDataTable from '@/components/admin/save/tables/WithdrawalsData';
-import { RiArrowDropDownLine } from 'react-icons/ri';
 import useModal from '@/hooks/useModal';
 import GoalSavings from '@/components/admin/save/modals/GoalSavings';
 import Link from 'next/link';
+import FixedSavings from '@/components/admin/save/modals/FixedSavings';
 
 const SavePage = () => {
     const { Modal, setShowModal, showModal, setModalBusy } = useModal();
@@ -53,7 +53,7 @@ const SavePage = () => {
         <div className='w-full'>
             <div className='text-3xl fw-600'>Save</div>
             <div className='lg:flex mt-12'>
-                <div className='w-5/12 lg:pr-4'>
+                <div className='lg:w-5/12 lg:pr-4'>
                     <div className='p-8 lg:pb-12 bg-white shade rounded-md'>
                         <p className='text-xl fw-500'>Change Interest Rate</p>
                         <div className='mt-10 flex'>
@@ -124,20 +124,19 @@ const SavePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-7/12 lg:pl-4 '>
+                <div className='lg:w-7/12 mt-6 lg:mt-0 lg:pl-4 '>
                     <div className='p-6 pt-8 bg-white shade rounded-md'>
                         <div className='flex items-center justify-between'>
                             <p className='text-xl fw-600'>Top Savers</p>
                             <div className='flex items-center'>
-                                <Link href='/save/top-savers' className='fs-700 text-primary fw-500 mr-6'>See All</Link>
-                                {/* <p className='px-2 border border-gray-300 flex items-center fs-500'>All time <RiArrowDropDownLine className='ml-2 text-xl'/></p> */}
+                                <Link href='save/top-savers' className='fs-700 text-primary fw-500 mr-6'>See All</Link>
                                 <select className='px-2 border border-gray-300 rounded fs-500'>
                                     <option>All Time</option>
                                     <option>Yearly</option>
                                 </select>
                             </div>
                         </div>
-                        <div>
+                        <div className='w-full overflow-x-auto'>
                             <TopSavers/>
                         </div>
                     </div>
@@ -156,7 +155,7 @@ const SavePage = () => {
                         <SavingChart/>
                     </div>
                 </div>
-                <div className='p-8 bg-white shade rounded-md'>
+                <div className='p-8 mt-8 lg:mt-0 bg-white shade rounded-md'>
                     <div className='flex items-center justify-between'>
                         <p className='text-xl fw-600'>Withdrawals</p>
                         <select className='px-2 border border-gray-300 rounded fs-500'>
@@ -169,7 +168,7 @@ const SavePage = () => {
                     </div>
                 </div>
             </div>
-            <div className='lg:grid grid-cols-2 gap-x-12 mt-12'>
+            <div className='lg:grid grid-cols-2 gap-x-12 mt-7 lg:mt-12'>
                 <div className='p-8 pl-0 bg-white shade rounded-md'>
                     <div className='pl-8 flex items-center justify-between'>
                         <p className='text-xl fw-600'>Matured Savings</p>
@@ -183,8 +182,8 @@ const SavePage = () => {
                         <MaturedSavingsChart/>
                     </div>
                 </div>
-                <div className='p-8 bg-white shade rounded-md'>
-                    <div className='flex items-center justify-between'>
+                <div className='py-6 lg:p-8 mt-8 lg:mt-0 bg-white shade rounded-md'>
+                    <div className='flex px-6 lg:px-0 items-center justify-between'>
                         <p className='text-xl fw-600'>Immature Savings</p>
                         <select className='px-2 border border-gray-300 rounded fs-500'>
                             <option>Monthly</option>
@@ -197,9 +196,9 @@ const SavePage = () => {
                     </div>
                 </div>
             </div>
-            <div className='lg:grid grid-cols-2 gap-x-12 mt-12'>
+            <div className='lg:grid grid-cols-2 gap-x-12 mt-8 lg:mt-12'>
                 <div className='p-8 pl-0 bg-white shade rounded-md'>
-                    <div className='flex lg:pl-8 items-center justify-between'>
+                    <div className='flex px-4 lg:pl-8 items-center justify-between'>
                         <p className='text-xl fw-600'>Total Interest</p>
                         <select className='px-2 border border-gray-300 rounded fs-500'>
                             <option>Monthly</option>
@@ -211,7 +210,7 @@ const SavePage = () => {
                         <TotalInterestChart/>
                     </div>
                 </div>
-                <div className='p-8 bg-white shade rounded-md'>
+                <div className='p-4 lg:p-8 mt-7 lg:mt-0 bg-white shade rounded-md'>
                     <div className='flex items-center justify-between'>
                         <p className='text-xl fw-600'>Maturing Savings</p>
                         <select className='px-2 border border-gray-300 rounded fs-500'>
@@ -239,7 +238,7 @@ const SavePage = () => {
                         <TotalWithdrawalChart/>
                     </div>
                 </div>
-                <div className='p-8 bg-white shade rounded-md'>
+                <div className='lg:p-8 p-4 mt-7 lg:mt-0 bg-white shade rounded-md'>
                     <div className='flex items-center justify-between'>
                         <p className='text-xl fw-600'>Withholding Tax</p>
                         <select className='px-2 border border-gray-300 rounded fs-500'>
@@ -255,7 +254,7 @@ const SavePage = () => {
             </div>
             <div className='lg:grid grid-cols-2 gap-x-12 mt-12'>
                 <div className='p-8 pl-0 bg-white shade rounded-md'>
-                    <div className='flex lg:pl-8 items-center justify-between'>
+                    <div className='flex lg:pl-8 pl-4 items-center justify-between'>
                         <p className='text-xl fw-600'>Failed Withdrawals</p>
                         <select className='px-2 border border-gray-300 rounded fs-500'>
                             <option>Monthly</option>
@@ -267,7 +266,7 @@ const SavePage = () => {
                         <FailedWithdrawalChart/>
                     </div>
                 </div>
-                <div className='p-8 bg-white shade rounded-md'>
+                <div className='p-4 lg:p-8 mt-7 lg:mt-0 bg-white shade rounded-md'>
                     <div className='flex items-center justify-between'>
                         <p className='text-xl fw-600'>Cards Expiry Dates</p>
                         <select className='px-2 border border-gray-300 rounded fs-500'>
@@ -280,8 +279,8 @@ const SavePage = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-12 rounded-md bg-white shade p-8'>
-                <div className='flex items-center justify-between'>
+            <div className='mt-12 rounded-md bg-white shade py-6 lg:p-8'>
+                <div className='flex px-4 lg:px-0 items-center justify-between'>
                     <p className='text-xl fw-600'>Naira and Dollars</p>
                     <select className='px-2 border border-gray-300 rounded fs-500'>
                         <option>Monthly</option>
@@ -289,15 +288,19 @@ const SavePage = () => {
                         <option>All time</option>
                     </select>
                 </div>
-                <div className='mt-4 mx-auto w-6/12 flex items-center justify-between'>
-                    <div className='flex items-center'>
-                        <p className='w-6 h-2 bg-secondary mt-1'></p>
-                        <p className='px-4'>NGN</p>
+                <div className='mt-4 px-4 lg:px-0 mx-auto lg:w-6/12 flex items-center justify-between'>
+                    <div className='lg:flex items-center'>
+                        <div className='flex items-center'>
+                            <p className='w-6 h-2 bg-secondary mt-1'></p>
+                            <p className='px-4'>NGN</p>
+                        </div>
                         <p className='fw-600 fs-700'>1,000,000 (300)</p>
                     </div>
-                    <div className='flex items-center'>
-                        <p className='w-6 h-2 bg-secondary mt-1'></p>
-                        <p className='px-4'>USD</p>
+                    <div className='lg:flex items-center'>
+                        <div className='flex items-center'>
+                            <p className='w-6 h-2 bg-secondary mt-1'></p>
+                            <p className='px-4'>USD</p>
+                        </div>
                         <p className='fw-600 fs-700'>1,000,000 (300)</p>
                     </div>
                 </div>
@@ -305,24 +308,24 @@ const SavePage = () => {
                     <NairaDollarChart/>
                 </div>
             </div>
-            <div className='mt-12 rounded-md bg-white shade p-8'>
-                <div className='flex items-center justify-between'>
+            <div className='mt-12 rounded-md bg-white shade p-4 lg:p-8'>
+                <div className='flex lg:items-center justify-between'>
                     <p className='text-xl fw-600'>Savers Data</p>
-                    <div className='flex items-center'>
-                        <Link href='/save/savers-data' className='text-primary fw-600'>See all</Link>
-                        <p className='flex items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>Filter <BsFilter className='ml-1'/></p>
+                    <div className='lg:flex items-center text-end lg:text-left'>
+                        <Link href='save/savers-data' className='text-primary fw-600'>See all</Link>
+                        <p className='flex mt-3 lg:mt-0 items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>Filter <BsFilter className='ml-1'/></p>
                     </div>
                 </div>
-                <div className='mt-7'>
+                <div className='mt-7 w-full overflow-x-auto'>
                     <SaversDataTable/>
                 </div>
             </div>
-            <div className='mt-12 overflow-hidden rounded-md bg-white shade p-8'>
-                <div className='flex items-center justify-between'>
+            <div className='mt-12 overflow-hidden rounded-md bg-white shade p-4 lg:p-8'>
+                <div className='flex lg:items-center justify-between'>
                     <p className='text-xl fw-600'>Withdrawal Data</p>
-                    <div className='flex items-center'>
-                        <Link href='/save/withdrawal-data' className='text-primary fw-600'>See all</Link>
-                        <p className='flex items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>Filter <BsFilter className='ml-1'/></p>
+                    <div className='lg:flex items-center text-end lg:text-left'>
+                        <Link href='save/withdrawal-data' className='text-primary fw-600'>See all</Link>
+                        <p className='flex mt-3 lg:mt-0 items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>Filter <BsFilter className='ml-1'/></p>
                     </div>
                 </div>
                 <div className='mt-7 !max-w-full overflow-hidden'>
@@ -337,7 +340,7 @@ const SavePage = () => {
             <GoalSavings/>
         </WalletModal>
         <FixedModal title="Change Fixed Savings Interest Rate">
-            <GoalSavings/>
+            <FixedSavings/>
         </FixedModal>
         <SaysModal title="Change SAYS Interest Rate">
             <GoalSavings/>

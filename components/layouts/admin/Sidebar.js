@@ -4,16 +4,15 @@ import Link from 'next/link';
 import { BsBank, BsGear } from 'react-icons/bs';
 import { MdOutlineDashboard } from 'react-icons/md';
 import { HiOutlineCreditCard } from 'react-icons/hi'
-import { Sidebar, SubMenu , Menu, MenuItem, useProSidebar } from 'react-pro-sidebar';
+import { Sidebar, SubMenu , Menu, MenuItem } from 'react-pro-sidebar';
 import { FaRegUser } from 'react-icons/fa';
 import { FiLifeBuoy } from 'react-icons/fi';
 import { TfiShiftLeft } from 'react-icons/tfi';
 
 export default function SidebarLayout() {
-    const { collapseSidebar, toggleSidebar, collapsed, toggled, broken, rtl } = useProSidebar();
 
   return (
-      <div className='left-0 fixed h-screen bg-secondary'>
+      <div className='left-0 fixed idex-30 h-screen bg-secondary'>
         <Sidebar 
             customBreakPoint="960px"
             className='h-screen w-64 fs-700 fw-500 text-white '
@@ -31,7 +30,7 @@ export default function SidebarLayout() {
                       if (level === 0)
                         return {
                           color: disabled ? '#ffff' : '#fff',
-                          backgroundColor: active ? '#eecef9' : undefined,
+                          backgroundColor: active ? '#6151DD' : undefined,
                           "&:hover": {
                             backgroundColor: "#6151DD !important",
                             color: "white !important",
@@ -81,8 +80,24 @@ export default function SidebarLayout() {
                 <SubMenu
                     label='Settings'
                     icon={<BsGear />}
+                    menuItemStyles={{
+                        button: ({ level, active, disabled }) => {
+                          if (level === 0)
+                            return {
+                              color: disabled ? '#ffff' : '#fff',
+                              backgroundColor: active ? '#eecef9' : undefined,
+                              "&:hover": {
+                                backgroundColor: "#6151DD !important",
+                                color: "white !important",
+                                borderRadius: "10px !important",
+                                fontWeight: "bold !important"
+                              },
+                            };
+                        },
+                      }}
                     >
                     <MenuItem
+                        className='!hover:bg-[#6151DD]'
                         component={<Link href="/admin/settings" />}
                         > 
                         Manage admin

@@ -29,7 +29,7 @@ const LoanPage = () => {
                             <LoanStatusChart/>
                         </div>
                     </div>
-                    <div className='p-8 pl-0 bg-white shade rounded-md'>
+                    <div className='p-8 pl-0 mt-8 lg:mt-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Request and Approval</p>
                             <select className='px-2 border border-gray-300 rounded fs-500'>
@@ -42,7 +42,7 @@ const LoanPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:grid grid-cols-2 gap-x-12 mt-12'>
+                <div className='lg:grid grid-cols-2 gap-x-12 mt-8 lg:mt-12'>
                     <div className='p-8 pl-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Loan Fees</p>
@@ -55,7 +55,7 @@ const LoanPage = () => {
                             <LoanFeesChart/>
                         </div>
                     </div>
-                    <div className='p-8 pl-0 bg-white shade rounded-md'>
+                    <div className='p-8 pl-0 bg-white mt-8 lg:mt-0 shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Loan Interest</p>
                             <select className='px-2 border border-gray-300 rounded fs-500'>
@@ -84,7 +84,7 @@ const LoanPage = () => {
                             <LoanStatusChart/>
                         </div>
                     </div>
-                    <div className='p-8 pl-0 bg-white shade rounded-md'>
+                    <div className='p-8 pl-0 mt-8 lg:mt-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Request and Approval</p>
                             <select className='px-2 border border-gray-300 rounded fs-500'>
@@ -97,7 +97,7 @@ const LoanPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:grid grid-cols-2 gap-x-12 mt-12'>
+                <div className='lg:grid grid-cols-2 gap-x-12 mt-8 lg:mt-12'>
                     <div className='p-8 pl-0 bg-white shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Loan Fees</p>
@@ -110,7 +110,7 @@ const LoanPage = () => {
                             <LoanFeesChart/>
                         </div>
                     </div>
-                    <div className='p-8 pl-0 bg-white shade rounded-md'>
+                    <div className='p-8 pl-0 bg-white mt-8 lg:mt-0 shade rounded-md'>
                         <div className='pl-8 flex items-center justify-between'>
                             <p className='text-xl fw-600 text-gray-500'>Loan Interest</p>
                             <select className='px-2 border border-gray-300 rounded fs-500'>
@@ -124,11 +124,11 @@ const LoanPage = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-12 w-full p-8 bg-white shade rounded-md'>
+            <div className='mt-8 lg:mt-12 w-full p-8 bg-white shade rounded-md'>
                 <div className='flex items-center justify-between'>
-                    <p className='text-xl text-gray-500 fw-600'>Loan Insurance</p>
+                    <p className='text-xl text-gray-500 fw-600'>Loan Issuance</p>
                     <div className='flex items-center'>
-                        <Link href='/loans' className='text-primary fw-600'>See all</Link>
+                        <Link href='loans/loan-issuance' className='text-primary fw-600'>See all</Link>
                         <p className='flex items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>Filter <BsFilter className='ml-1'/></p>
                     </div>
                 </div>
@@ -140,7 +140,7 @@ const LoanPage = () => {
                 <div className='flex items-center justify-between'>
                     <p className='text-xl text-gray-500 fw-600'>Loan Repayment</p>
                     <div className='flex items-center'>
-                        <Link href='/loans' className='text-primary fw-600'>See all</Link>
+                        <Link href='loans/loan-repay' className='text-primary fw-600'>See all</Link>
                         <p className='flex items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>Filter <BsFilter className='ml-1'/></p>
                     </div>
                 </div>

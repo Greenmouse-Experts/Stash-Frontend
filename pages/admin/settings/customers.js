@@ -20,9 +20,9 @@ const CustomerSettings = () => {
   return (
     <Layout>
          <div>
-            <div className='flex items-center lg:pt-6'>
+            <div className='lg:flex items-center lg:pt-6'>
                 <div className='text-3xl fw-600'>Manage customers</div>
-                <div className='flex text-gray-500 items-center ml-16'>
+                <div className='flex text-gray-500 items-center mt-6 lg:mt-0 lg:ml-16'>
                     <p>Manage customers</p>
                     <MdKeyboardArrowRight className='text-xl mx-5'/>
                     <p>Restricted</p>

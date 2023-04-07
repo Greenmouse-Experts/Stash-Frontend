@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '@/components/layouts/admin/Layout';
 import TotalSpendChart from '@/components/admin/Spend/Charts/TotalSpend';
-import { RiArrowDropDownLine } from 'react-icons/ri';
 import SuccessfulCatChart from '@/components/admin/Spend/Charts/SuccessfulCat';
 import TopSpendTable from '@/components/admin/Spend/tables/TopSpend';
 import SpendCatChart from '@/components/admin/Spend/Charts/SpendCat';
@@ -15,7 +14,7 @@ const SpendPage = () => {
         <div>
             <div className='text-3xl fw-600'>Spend</div>
             <div className='lg:flex mt-12'>
-                <div className='w-4/12 lg:pr-4'>
+                <div className='lg:w-4/12 lg:pr-4'>
                     <div className=''>
                         <div className='p-8 pl-0 bg-white shade rounded-md'>
                             <div className='pl-8 flex items-center justify-between'>
@@ -43,19 +42,19 @@ const SpendPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-8/12 lg:pl-4 '>
+                <div className='lg:w-8/12 lg:pl-4 mt-8 lg:mt-0'>
                     <div className='p-6 pt-8 bg-white shade rounded-md'>
-                        <div className='flex items-center justify-between'>
+                        <div className='flex items-start md:items-center justify-between'>
                             <p className='text-xl fw-600'>Top Spenders</p>
-                            <div className='flex items-center'>
-                                <Link href='/spend/top-spenders' className='fs-700 text-primary fw-500 mr-6'>See All</Link>
-                                <select className='px-2 border border-gray-300 rounded fs-500'>
+                            <div className='md:flex items-center text-end lg:text-left'>
+                                <Link href='spend/top-spender' className='fs-700 text-primary fw-500 mr-6'>See All</Link>
+                                <select className='px-2 border mt-6 md:mt-0 border-gray-300 rounded fs-500'>
                                     <option>All Time</option>
                                     <option>Yearly</option>
                                 </select>
                             </div>
                         </div>
-                        <div>
+                        <div className='w-full overflow-x-auto'>
                             <TopSpendTable/>
                         </div>
                     </div>
@@ -71,19 +70,19 @@ const SpendPage = () => {
                         </select>
                     </div>
                 </div>
-                <div className='mt-7'>
+                <div className='mt-7 '>
                     <SpendCatChart/>
                 </div>
             </div>
             <div className='mt-12 rounded-md bg-white shade p-8'>
-                <div className='flex items-center justify-between'>
+                <div className='flex md:items-center justify-between'>
                     <p className='text-xl fw-600'>Spenders Data</p>
-                    <div className='flex items-center'>
-                        <p className='text-primary fw-600'>See all</p>
-                        <p className='flex items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>Filter <BsFilter className='ml-1'/></p>
+                    <div className='md:flex items-center text-end md:text-left'>
+                        <Link href='spend/spender-data' className='text-primary fw-600'>See all</Link>
+                        <p className='flex mt-6 md:mt-0 items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>Filter <BsFilter className='ml-1'/></p>
                     </div>
                 </div>
-                <div className='mt-7'>
+                <div className='mt-7 w-full overflow-x-auto'>
                     <SpendersDataTable/>
                 </div>
             </div>

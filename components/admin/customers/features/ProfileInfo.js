@@ -5,11 +5,11 @@ const ProfileInfo = () => {
   return (
     <div>
         <div className='py-16 border-b lg:flex '>
-            <div className='w-3/12'>
+            <div className='lg:w-3/12'>
                 <p className='fw-600 text-2xl'>Personal Data</p>
                 <p>Tier 1</p>
             </div>
-            <div className='w-9/12 grid grid-cols-2 gap-x-16'>
+            <div className='lg:w-9/12 mt-6 lg:mt-0 grid gap-y-8 md:grid-cols-2 gap-x-16'>
                 <div>
                     <div>
                         <label className='fw-500 lg:fs-700 text-gray-500'>First name</label>
@@ -84,11 +84,11 @@ const ProfileInfo = () => {
             </div>
         </div>
         <div className='py-16 border-b lg:flex '>
-            <div className='w-3/12'>
+            <div className='lg:w-3/12'>
                 <p className='fw-600 text-2xl'>Contact Address</p>
                 <p>Tier 1</p>
             </div>
-            <div className='w-9/12 grid grid-cols-2 gap-x-16'>
+            <div className='lg:w-9/12 mt-6 lg:mt-0 grid gap-y-8 md:grid-cols-2 gap-x-16'>
                 <div>
                     <div>
                         <label className='fw-500 lg:fs-700 text-gray-500'>Residential address</label>
@@ -139,10 +139,10 @@ const ProfileInfo = () => {
             </div>
         </div>
         <div className='py-16 border-b lg:flex '>
-            <div className='w-3/12'>
+            <div className='lg:w-3/12'>
                 <p className='fw-600 text-2xl'>Stash Wallet</p>
             </div>
-            <div className='w-9/12 grid grid-cols-2 gap-x-16'>
+            <div className='lg:w-9/12 mt-6 lg:mt-0 grid gap-x-8 md:grid-cols-2 gap-x-16'>
                 <div>
                     <div>
                         <label className='fw-500 lg:fs-700 text-gray-500'>Stash Wallet Number</label>
@@ -166,11 +166,11 @@ const ProfileInfo = () => {
             </div>
         </div>
         <div className='py-16 border-b lg:flex '>
-            <div className='w-3/12'>
+            <div className='lg:w-3/12'>
                 <p className='fw-600 text-2xl'>KYC Status</p>
                 <p>Tier 2</p>
             </div>
-            <div className='w-9/12 grid grid-cols-2 gap-x-16'>
+            <div className='lg:w-9/12 grid gap-y-8 mt-6 lg:mt-0 md:grid-cols-2 gap-x-16'>
                 <div>
                     <div className=''>
                         <label className='fw-500 lg:fs-700 text-gray-500'>BVN</label>
@@ -241,11 +241,11 @@ const ProfileInfo = () => {
             </div>
         </div>
         <div className='py-16 border-b lg:flex '>
-            <div className='w-3/12'>
+            <div className='lg:w-3/12'>
                 <p className='fw-600 text-2xl'>KYC Status</p>
                 <p>Tier 3</p>
             </div>
-            <div className='w-9/12 grid grid-cols-2 gap-x-16'>
+            <div className='lg:w-9/12 grid gap-y-8 mt-6 lg:mt-0 md:grid-cols-2 gap-x-16'>
                 <div>
                     <div>
                         <label className='fw-500 lg:fs-700 text-gray-500'>Identity Verification</label>
@@ -309,7 +309,7 @@ const ProfileInfo = () => {
             </div>
         </div>
         <div className='mt-16 text-center'>
-            <button className='bg-red-500 px-36 py-5 rounded-md text-white fw-600'>Deactivate Customer</button>
+            <button className='bg-red-500 lg:px-36 px-10 py-5 rounded-md text-white fw-600'>Deactivate Customer</button>
         </div>
     </div>
   )
