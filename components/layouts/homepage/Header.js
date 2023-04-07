@@ -11,7 +11,7 @@ const Header = () => {
         <div className='flex justify-between items-center'>
           <div className='w-3/12'>
             <Link href='/'>
-                <Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1679573442/Stash/Group_48096160_2_sax9kt.png' alt='logo' width={300} height={300} className='w-36 lg:w-44'/>
+                <Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1679500697/Stash/Group_48096160_vvslzo.png' alt='logo' width={300} height={300} className='w-36 lg:w-44'/>
             </Link>
           </div>
           <div className='hidden lg:block w-5/12'>
