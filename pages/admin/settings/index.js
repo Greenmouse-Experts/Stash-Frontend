@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import Layout from '@/components/layouts/admin/Layout';
 import { MdKeyboardArrowRight } from 'react-icons/md';
