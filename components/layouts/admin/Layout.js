@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
                 <div className='fixed index-30 top-0 bg-white w-full lg:pr-60 shadow'>
                     <Header/>
                 </div>
-                <div className='bg-dash mt-16 py-10 min-h-screen px-6'>
+                <div className='bg-dash mt-16 py-10 min-h-screen px-3 lg:px-6'>
                 {children}
                 </div>
                 <div className='bg-white'>

@@ -1,6 +1,6 @@
-import { Menu } from '@headlessui/react'
 import React from 'react'
 import { BsFilter, BsThreeDotsVertical } from 'react-icons/bs'
+import {Menu, MenuHandler, MenuItem, MenuList, Button} from '../../../UI/dropdown'
 
 const Unresolved = () => {
   return (
@@ -34,16 +34,15 @@ const Unresolved = () => {
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-left">Double debit</td>
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-left">Debited</td>
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-center">
-                                <Menu as="div" className='relative'>
-                                    <Menu.Button>
-                                        <BsThreeDotsVertical className='text-xl'/>
-                                    </Menu.Button>
-                                    <Menu.Items>
-                                            <div className='absolute index-30  bg-white min-w-40 fw-400 shade -left-24 p-4 rounded-lg'>
-                                                <div className='px-2 py-2 hover:bg-gray-50 hover:fw-500 cursor-pointer'>Mark as Resolved</div>
-                                                <div className='px-2 py-2 hover:bg-gray-50 hover:fw-500  cursor-pointer'>Decline</div>
-                                            </div>
-                                    </Menu.Items>
+                                <Menu>
+                                    <MenuHandler>
+                                        <Button className='bg-transparent text-md flex items-center font-normal shadow-none text-black capitalize'><BsThreeDotsVertical className='text-2xl'/></Button>
+                                    </MenuHandler>
+                                    <MenuList>
+                                        <MenuItem>Menu Item 1</MenuItem>
+                                        <MenuItem>Menu Item 2</MenuItem>
+                                        <MenuItem>Menu Item 3</MenuItem>
+                                    </MenuList>
                                 </Menu>
                             </td>
                         </tr>
@@ -57,16 +56,15 @@ const Unresolved = () => {
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-left">Double debit</td>
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-left">Debited</td>
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-center">
-                                <Menu as="div" className='relative'>
-                                    <Menu.Button>
-                                        <BsThreeDotsVertical className='text-xl'/>
-                                    </Menu.Button>
-                                    <Menu.Items>
-                                            <div className='absolute index-30  bg-white min-w-40 fw-400 shade -left-24 p-4 rounded-lg'>
-                                                <div className='px-2 py-2 hover:bg-gray-50 hover:fw-500 cursor-pointer'>Mark as Resolved</div>
-                                                <div className='px-2 py-2 hover:bg-gray-50 hover:fw-500  cursor-pointer'>Decline</div>
-                                            </div>
-                                    </Menu.Items>
+                                <Menu>
+                                    <MenuHandler>
+                                        <Button className='bg-transparent text-md flex items-center font-normal shadow-none text-black capitalize'><BsThreeDotsVertical className='text-2xl'/></Button>
+                                    </MenuHandler>
+                                    <MenuList>
+                                        <MenuItem>Menu Item 1</MenuItem>
+                                        <MenuItem>Menu Item 2</MenuItem>
+                                        <MenuItem>Menu Item 3</MenuItem>
+                                    </MenuList>
                                 </Menu>
                             </td>
                         </tr>
@@ -80,16 +78,15 @@ const Unresolved = () => {
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-left">Double debit</td>
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-left">Debited</td>
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-center">
-                                <Menu as="div" className='relative'>
-                                    <Menu.Button>
-                                        <BsThreeDotsVertical className='text-xl'/>
-                                    </Menu.Button>
-                                    <Menu.Items>
-                                            <div className='absolute index-30  bg-white min-w-40 fw-400 shade -left-24 p-4 rounded-lg'>
-                                                <div className='px-2 py-2 hover:bg-gray-50 hover:fw-500 cursor-pointer'>Mark as Resolved</div>
-                                                <div className='px-2 py-2 hover:bg-gray-50 hover:fw-500  cursor-pointer'>Decline</div>
-                                            </div>
-                                    </Menu.Items>
+                                <Menu>
+                                    <MenuHandler>
+                                        <Button className='bg-transparent text-md flex items-center font-normal shadow-none text-black capitalize'><BsThreeDotsVertical className='text-2xl'/></Button>
+                                    </MenuHandler>
+                                    <MenuList>
+                                        <MenuItem>Menu Item 1</MenuItem>
+                                        <MenuItem>Menu Item 2</MenuItem>
+                                        <MenuItem>Menu Item 3</MenuItem>
+                                    </MenuList>
                                 </Menu>
                             </td>
                         </tr>
@@ -103,16 +100,15 @@ const Unresolved = () => {
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-left">Double debit</td>
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-left">Debited</td>
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-center">
-                                <Menu as="div" className='relative'>
-                                    <Menu.Button>
-                                        <BsThreeDotsVertical className='text-xl'/>
-                                    </Menu.Button>
-                                    <Menu.Items>
-                                            <div className='absolute index-30  bg-white min-w-40 fw-400 shade -left-24 p-4 rounded-lg'>
-                                                <div className='px-2 py-2 hover:bg-gray-50 hover:fw-500 cursor-pointer'>Mark as Resolved</div>
-                                                <div className='px-2 py-2 hover:bg-gray-50 hover:fw-500  cursor-pointer'>Decline</div>
-                                            </div>
-                                    </Menu.Items>
+                                <Menu>
+                                    <MenuHandler>
+                                        <Button className='bg-transparent text-md flex items-center font-normal shadow-none text-black capitalize'><BsThreeDotsVertical className='text-2xl'/></Button>
+                                    </MenuHandler>
+                                    <MenuList>
+                                        <MenuItem>Menu Item 1</MenuItem>
+                                        <MenuItem>Menu Item 2</MenuItem>
+                                        <MenuItem>Menu Item 3</MenuItem>
+                                    </MenuList>
                                 </Menu>
                             </td>
                         </tr>
@@ -126,16 +122,15 @@ const Unresolved = () => {
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-left">Double debit</td>
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-left">Debited</td>
                             <td className="align-middle fs-500 whitespace-nowrap px-4 py-4 text-center">
-                                <Menu as="div" className='relative'>
-                                    <Menu.Button>
-                                        <BsThreeDotsVertical className='text-xl'/>
-                                    </Menu.Button>
-                                    <Menu.Items>
-                                            <div className='absolute index-30  bg-white min-w-40 fw-400 shade -left-28 p-4 rounded-lg'>
-                                                <div className='px-2 py-2 hover:bg-gray-50 hover:fw-500 cursor-pointer'>Mark as Resolved</div>
-                                                <div className='px-2 py-2 hover:bg-gray-50 hover:fw-500  cursor-pointer'>Decline</div>
-                                            </div>
-                                    </Menu.Items>
+                                <Menu>
+                                    <MenuHandler>
+                                        <Button className='bg-transparent text-md flex items-center font-normal shadow-none text-black capitalize'><BsThreeDotsVertical className='text-2xl'/></Button>
+                                    </MenuHandler>
+                                    <MenuList>
+                                        <MenuItem>Menu Item 1</MenuItem>
+                                        <MenuItem>Menu Item 2</MenuItem>
+                                        <MenuItem>Menu Item 3</MenuItem>
+                                    </MenuList>
                                 </Menu>
                             </td>
                         </tr>

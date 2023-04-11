@@ -3,7 +3,7 @@ import React from 'react'
 const TopSpendTable = () => {
   return (
     <div>
-        <div className="flex flex-col mt-8">
+        <div className="oveflow-x-auto flex flex-col mt-8">
             <div className="sm:-mx-6 lg:-mx-8">
                 <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                 <div className="overflow-x-auto">
