@@ -12,7 +12,7 @@ import { TfiShiftLeft } from 'react-icons/tfi';
 export default function SidebarLayout() {
 
   return (
-      <div className='left-0 fixed idex-30 h-screen bg-secondary'>
+      <div className='left-0 fixed index-30 h-screen bg-secondary'>
         <Sidebar 
             customBreakPoint="960px"
             className='h-screen w-64 fs-700 fw-500 text-white '

@@ -13,16 +13,26 @@ export default function UsersChart() {
           },
         colors: ['#7665F3', '#FFC423'],
         legend: {
-        colors: ['#7665F3', '#FFC423'],
-        fontSize: '17px',
-        fontWeight: 500,
-        labels: {
-            colors: ['#7665F3', '#FFC423'],
+          colors: ['#7665F3', '#FFC423'],
+          fontSize: '17px',
+          fontWeight: 500,
+          labels: {
+              colors: ['#7665F3', '#FFC423'],
+          },
+          onItemHover: {
+              highlightDataSeries: true
+          },
         },
-        onItemHover: {
-            highlightDataSeries: true
-        },
-        }
+        responsive: [
+          {
+            breakpoint: 960,
+            options: {
+              legend: {
+                position: "bottom"
+              }
+            }
+          }
+        ]
     
     };
     const series = [2000, 650,]; //our data
@@ -30,7 +40,7 @@ export default function UsersChart() {
   return (
     <div className="">
         {(typeof window !== 'undefined') &&
-            <Chart options={options} series={series} type="donut" width="90%" />
+            <Chart options={options} series={series} type="donut" width="100%" className='' />
         }
     </div>
   );

@@ -7,6 +7,7 @@ import Layout from '@/components/layouts/admin/Layout';
 import Image from 'next/image'
 import React, {useState} from 'react'
 import { RiArrowDropDownLine } from 'react-icons/ri'
+import {Menu, MenuHandler, MenuItem, MenuList, Button} from '../../../../components/UI/dropdown'
 
 const CustomerDetails = () => {
 
@@ -33,9 +34,17 @@ const CustomerDetails = () => {
                     </div>
                 </div>
                 <div className='flex mt-6 md:mt-0 items-center'>
-                    <div className='fw-500 flex items-center border rounded border-gray-300 px-3 py-2'>
-                        <p className='fs-700'>Restrict</p>
-                        <RiArrowDropDownLine className='ml-3 text-2xl'/>
+                    <div className='fw-500 border rounded border-gray-300'>
+                        <Menu>
+                            <MenuHandler>
+                                <Button className='bg-transparent text-md flex items-center font-normal shadow-none text-black capitalize'>Restrict <RiArrowDropDownLine className='ml-3 text-2xl'/></Button>
+                            </MenuHandler>
+                            <MenuList>
+                                <MenuItem>Menu Item 1</MenuItem>
+                                <MenuItem>Menu Item 2</MenuItem>
+                                <MenuItem>Menu Item 3</MenuItem>
+                            </MenuList>
+                        </Menu>
                     </div>
                     <div className='fw-500 flex items-center ml-6 border rounded border-gray-300 px-3 py-2'>
                         <p className='fs-700'>Flag</p>

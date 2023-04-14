@@ -13,16 +13,26 @@ export default function LoanStatusChart() {
           },
         colors: ['#6B5AED', ' #F75555'],
         legend: {
-        colors: ['#6B5AED', ' #F75555'],
-        fontSize: '17px',
-        fontWeight: 500,
-        labels: {
-            colors: ['#7665F3', ' #F75555'],
+          colors: ['#6B5AED', ' #F75555'],
+          fontSize: '17px',
+          fontWeight: 500,
+          labels: {
+              colors: ['#7665F3', ' #F75555'],
+          },
+          onItemHover: {
+              highlightDataSeries: true
+          },
         },
-        onItemHover: {
-            highlightDataSeries: true
-        },
-        }
+        responsive: [
+          {
+            breakpoint: 960,
+            options: {
+              legend: {
+                position: "bottom"
+              }
+            }
+          }
+        ]
     
     };
     const series = [2000, 650,]; //our data
