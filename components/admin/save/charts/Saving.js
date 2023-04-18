@@ -50,7 +50,7 @@ const SavingChart = () => {
             <div className='flex mt-8 items-center justify-between'>
                 <div className='flex items-center'>
                     <p className='w-4 h-4 circle bg-red-400'></p>
-                    <p className='pl-2 text-gray-500'>USD</p>
+                    <p className='pl-2 text-gray-500'>Business</p>
                 </div>
                 <div className='flex items-center lg:fs-800'>
                     <p className='text-gray-500'>(3)</p>
@@ -70,7 +70,7 @@ const SavingChart = () => {
             <div className='flex mt-8 items-center justify-between'>
                 <div className='flex items-center'>
                     <p className='w-4 h-4 circle bg-indigo-700'></p>
-                    <p className='pl-2 text-gray-500'>SAYE</p>
+                    <p className='pl-2 text-gray-500'>SAFO</p>
                 </div>
                 <div className='flex items-center lg:fs-800'>
                     <p className='text-gray-500'>(15)</p>
@@ -80,11 +80,20 @@ const SavingChart = () => {
             <div className='flex mt-8 items-center justify-between'>
                 <div className='flex items-center'>
                     <p className='w-4 h-4 circle bg-purple-700'></p>
-                    <p className='pl-2 text-gray-500'>Wallet</p>
+                    <p className='pl-2 text-gray-500'>Main</p>
                 </div>
                 <div className='flex items-center lg:fs-800'>
                     <p className='text-gray-500'>(15)</p>
                     <p className='ml-3 fw-600'>801,000</p>
+                </div>
+            </div>
+            <div className='flex mt-8 items-center justify-between'>
+                <div className='flex items-center'>
+                    <p className='pl-2 fw-600'>Total</p>
+                </div>
+                <div className='flex items-center lg:fs-800'>
+                    <p className='text-gray-500'>(15)</p>
+                    <p className='ml-3 fw-600'>1,801,000</p>
                 </div>
             </div>
         </div>

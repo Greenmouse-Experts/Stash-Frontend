@@ -9,8 +9,12 @@ const index = () => {
   return (
     <Layout>
         <div>
-            <div>
+            <div className='flex justify-between'>
                 <p className='text-3xl fw-600'>Dashboard</p>
+                <select className='px-2 border mt-6 md:mt-0 border-gray-300 rounded fs-500'>
+                    <option>All Time</option>
+                    <option>Yearly</option>
+                </select>
             </div>
             <div className='mt-10'>
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-16'>

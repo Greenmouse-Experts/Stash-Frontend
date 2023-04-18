@@ -165,6 +165,16 @@ input:focus-within {
       padding: 60px 0px;
     }
   }
+  .w-45{
+    width: 20px;
+  }
+  .w-180{
+    width: 120%;
+  }
+  .scroll-pro::-webkit-scrollbar {
+      width: 6px;
+      height: 0px;
+  }
   .bg-home{
     background: #F7F6F0;
   }

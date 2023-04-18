@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '@/components/layouts/admin/Layout';
-import { BsFilter, BsThreeDotsVertical } from 'react-icons/bs';
+import { BsDownload, BsFilter, BsThreeDotsVertical } from 'react-icons/bs';
 import Image from 'next/image';
 import TopSavers from '@/components/admin/save/tables/TopSavers';
 import SavingChart from '@/components/admin/save/charts/Saving';
@@ -12,13 +12,13 @@ import TotalWithdrawalChart from '@/components/admin/save/charts/TotalWithdrawal
 import WithholdingTaxChart from '@/components/admin/save/charts/WithholdingTax';
 import FailedWithdrawalChart from '@/components/admin/save/charts/FailedWithdrawal';
 import CardExpiryTable from '@/components/admin/save/tables/CardExpiry';
-import NairaDollarChart from '@/components/admin/save/charts/NairaDollar';
 import SaversDataTable from '@/components/admin/save/tables/SaversData';
 import WithdrawalDataTable from '@/components/admin/save/tables/WithdrawalsData';
 import useModal from '@/hooks/useModal';
 import GoalSavings from '@/components/admin/save/modals/GoalSavings';
 import Link from 'next/link';
 import FixedSavings from '@/components/admin/save/modals/FixedSavings';
+import MainBusinChart from '@/components/admin/save/charts/MainBusin';
 
 const SavePage = () => {
     const { Modal, setShowModal, showModal, setModalBusy } = useModal();
@@ -73,7 +73,7 @@ const SavePage = () => {
                                     <BsThreeDotsVertical className='cursor-pointer' onClick={() => setShowWalletModal(true)}/>
                                 </div>
                                 <div className='mt-6 fs-500 fw-500'>
-                                    <p className=''>Wallet Savings</p>
+                                    <p className=''>Main Savings</p>
                                     <p className='fs-400 mt-2'>14%</p>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@ const SavePage = () => {
                                     <BsThreeDotsVertical className='cursor-pointer' onClick={() => setShowDollarModal(true)}/>
                                 </div>
                                 <div className='mt-6 fs-500 fw-500'>
-                                    <p className=''>US Dollar Savings</p>
+                                    <p className=''>Business Savings</p>
                                     <p className='fs-400 mt-2'>14%</p>
                                 </div>
                             </div>
@@ -117,8 +117,8 @@ const SavePage = () => {
                                     <BsThreeDotsVertical className='cursor-pointer' onClick={() => setShowSayeModal(true)}/>
                                 </div>
                                 <div className='mt-6 fs-500 fw-500'>
-                                    <p className=''>Save as you earn</p>
-                                    <p className='fs-400 mt-2'>14% <span className='text-gray-400'>(SAYE)</span></p>
+                                    <p className=''>Save for Others</p>
+                                    <p className='fs-400 mt-2'>14% <span className='text-gray-400'>(SAFO)</span></p>
                                 </div>
                             </div>
                         </div>
@@ -269,10 +269,15 @@ const SavePage = () => {
                 <div className='p-4 lg:p-8 mt-7 lg:mt-0 bg-white shade rounded-md'>
                     <div className='flex items-center justify-between'>
                         <p className='text-xl fw-600'>Cards Expiry Dates</p>
-                        <select className='px-2 border border-gray-300 rounded fs-500'>
-                            <option>All time</option>
-                            <option>Yearly</option>
-                        </select>
+                        <div className='flex'>
+                            <div className='flex  rounded px-3 py-1 items-center fw-500'>
+                                <p className='text-primary fw-500'>See All</p>
+                            </div>
+                            <div className='flex items-center border border-gray-400 px-3 ml-10 rounded-md fw-500'>
+                                <p>Export</p>
+                                <BsDownload className='ml-2'/>
+                            </div>
+                        </div>
                     </div>
                     <div className='mt-8'>
                         <CardExpiryTable/>
@@ -281,7 +286,7 @@ const SavePage = () => {
             </div>
             <div className='mt-12 rounded-md bg-white shade py-6 lg:p-8'>
                 <div className='flex px-4 lg:px-0 items-center justify-between'>
-                    <p className='text-xl fw-600'>Naira and Dollars</p>
+                    <p className='text-xl fw-600'>Main and Business</p>
                     <select className='px-2 border border-gray-300 rounded fs-500'>
                         <option>Monthly</option>
                         <option>Yearly</option>
@@ -292,20 +297,20 @@ const SavePage = () => {
                     <div className='lg:flex items-center'>
                         <div className='flex items-center'>
                             <p className='w-6 h-2 bg-secondary mt-1'></p>
-                            <p className='px-4'>NGN</p>
+                            <p className='px-4'>MAIN</p>
                         </div>
                         <p className='fw-600 fs-700'>1,000,000 (300)</p>
                     </div>
                     <div className='lg:flex items-center'>
                         <div className='flex items-center'>
                             <p className='w-6 h-2 bg-secondary mt-1'></p>
-                            <p className='px-4'>USD</p>
+                            <p className='px-4'>BUSIN</p>
                         </div>
                         <p className='fw-600 fs-700'>1,000,000 (300)</p>
                     </div>
                 </div>
                 <div className='mt-7'>
-                    <NairaDollarChart/>
+                    <MainBusinChart/>
                 </div>
             </div>
             <div className='mt-12 rounded-md bg-white shade p-4 lg:p-8'>
