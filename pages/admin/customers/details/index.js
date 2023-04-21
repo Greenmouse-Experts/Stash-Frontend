@@ -29,8 +29,9 @@ const CustomerDetails = () => {
                 <div className='flex items-center'>
                     <Image src='https://res.cloudinary.com/greenmouse-tech/image/upload/v1680003695/Stash/profile_rl7x7s.jpg' alt='banner' width={200} height={100} className='w-28 h-28 circle'/>
                     <div className='ml-6'>
-                    <p className='text-2xl fw-500'>Paul Ogunleye</p>
-                    <p>Tier 1</p>
+                        <p className='text-2xl fw-500'>Paul Ogunleye</p>
+                        <p className='fs-500'>Tier 1</p>
+                        <p className='mt-3 fw-600 fs-400 text-primary'>Account No: 2345678972</p>
                     </div>
                 </div>
                 <div className='flex mt-6 md:mt-0 items-center'>
@@ -52,27 +53,35 @@ const CustomerDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className='grid gap-y-12 grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-x-10 mt-12'>
-            <div className='p-8 bg-white bord-b border-purple-700 rounded-t-lg'>
-                <p className='fw-500 text-gray-500'>Total Spend</p>
-                <p className='fw-600 text-xl mt-8 mb-4'>₦ 1,000,800</p>
-                <p className='ml-8 fw-600 text-gray-500'>(70)</p>
-            </div>
-            <div className='p-8 bg-white bord-b border-orange-300 rounded-t-lg'>
-                <p className='fw-500 text-gray-500'>Total Wallet</p>
-                <p className='fw-600 text-xl mt-8 mb-4'>₦ 1,000,800</p>
-                <p className='ml-8 fw-600 text-gray-500'>(70)</p>
-            </div>
-            <div className='p-8 bg-white bord-b border-green-500 rounded-t-lg'>
-                <p className='fw-500 text-gray-500'>Total Savings</p>
-                <p className='fw-600 text-xl mt-8 mb-4'>₦ 1,000,800</p>
-                <p className='ml-8 fw-600 text-gray-500'>(70)</p>
-            </div>
-            <div className='p-8 bg-white bord-b border-red-600 rounded-t-lg'>
-                <p className='fw-500 text-gray-500'>Total Loans</p>
-                <p className='fw-600 text-xl mt-8 mb-4'>₦ 1,000,800</p>
-                <p className='ml-8 fw-600 text-gray-500'>(70)</p>
-            </div>
+            {/* 5 cols in flex */}
+            <div className='w-full overflow-x-auto pb-4 scroll-pro'>
+                <div className='w-180 grid gap-y-12 grid-cols-1  md:grid-cols-2 lg:grid-cols-5 gap-x-10 mt-12'>
+                    <div className='p-8 bg-white bord-b border-purple-700 rounded-t-lg'>
+                        <p className='fw-500 text-gray-500'>Main Balance</p>
+                        <p className='fw-600 text-xl mt-8 mb-4'>₦ 1,000,800</p>
+                        <p className='ml-8 fw-600 text-gray-500'>(70)</p>
+                    </div>
+                    <div className='p-8 bg-white bord-b border-orange-300 rounded-t-lg'>
+                        <p className='fw-500 text-gray-500'>Total Savings Balance</p>
+                        <p className='fw-600 text-xl mt-8 mb-4'>₦ 1,000,800</p>
+                        <p className='ml-8 fw-600 text-gray-500'>(70)</p>
+                    </div>
+                    <div className='p-8 bg-white bord-b border-green-500 rounded-t-lg'>
+                        <p className='fw-500 text-gray-500'>Fixed Savings Balance</p>
+                        <p className='fw-600 text-xl mt-8 mb-4'>₦ 1,000,800</p>
+                        <p className='ml-8 fw-600 text-gray-500'>(70)</p>
+                    </div>
+                    <div className='p-8 bg-white bord-b border-red-600 rounded-t-lg'>
+                        <p className='fw-500 text-gray-500'>Goal Savings Balance</p>
+                        <p className='fw-600 text-xl mt-8 mb-4'>₦ 1,000,800</p>
+                        <p className='ml-8 fw-600 text-gray-500'>(70)</p>
+                    </div>
+                    <div className='p-8 bg-white bord-b border-red-600 rounded-t-lg'>
+                        <p className='fw-500 text-gray-500'>Loan Balance</p>
+                        <p className='fw-600 text-xl mt-8 mb-4'>₦ 1,000,800</p>
+                        <p className='ml-8 fw-600 text-gray-500'>(70)</p>
+                    </div>
+                </div>
             </div>
             <div className='mt-12 lg:mt-16'>
                 <div className='w-full oveflow-x-auto'>
