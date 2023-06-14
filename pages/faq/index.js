@@ -1,8 +1,7 @@
 import React from "react";
-import Layout from "@/components/layouts/homepage/Layout";
-import Image from "next/image";
-import Reviews from "@/components/frontend/homepage/Reviews";
-import DownloadApp from "@/components/frontend/homepage/Download";
+import Layout from "../../components/layouts/homepage/Layout";
+import Reviews from "../../components/frontend/homepage/Reviews";
+import DownloadApp from "../../components/frontend/homepage/Download";
 
 const SpendPage = () => {
   return (
