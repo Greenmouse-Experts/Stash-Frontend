@@ -73,7 +73,7 @@ const SpendPage = () => {
                 </p>
                 <p className="text-[#6B778C] lg:fs-700 mt-5 lg:w-10/12">
                   Experience the convenience and flexibility of our fintech
-                  app's airtime management features. Recharge with ease, stay
+                  app&apos;s airtime management features. Recharge with ease, stay
                   connected, and take control of your airtime like never before.
                 </p>
               </div>

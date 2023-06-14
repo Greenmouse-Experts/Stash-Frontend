@@ -37,7 +37,7 @@ const SavePage = () => {
                   Set a savings goal
                 </p>
                 <p className="text-[#6B778C] lg:fs-700 mt-5 lg:w-10/12">
-                  Whether it's education, travel, house rent, medical expenses,
+                  Whether it&apos;s education, travel, house rent, medical expenses,
                   wedding, business, charity, or any other purpose, our app
                   allows you to save for what matters most to you.
                 </p>
@@ -72,7 +72,7 @@ const SavePage = () => {
               <div className="my-8">
                 <p className="text-2xl lg:text-4xl fw-600">Fixed Savings</p>
                 <p className="text-[#6B778C] lg:fs-700 mt-5 lg:w-10/12">
-                  Whether it's saving N5 million for 3 months or N100,000 for 2
+                  Whether it&apos;s saving N5 million for 3 months or N100,000 for 2
                   months, you can set your savings goals and watch your money
                   grow.
                 </p>
@@ -146,7 +146,7 @@ const SavePage = () => {
                 <p className="text-[#6B778C] lg:fs-700 mt-5 lg:w-10/12">
                   Savings for Others is a unique feature that allows you to open
                   savings accounts for your loved ones on Stash, even if they
-                  don't have smartphones or aren't willing to download the app
+                  don&apos;t have smartphones or aren&apos;t willing to download the app
                   themselves.
                 </p>
               </div>

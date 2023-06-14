@@ -50,7 +50,7 @@ const Features = () => {
                         <span className='px-6 lg:px-12 rounded-md py-2 fs-500 fw-500 bg-[#6B5AED33]'>Save with Ease</span>
                         <div className='my-8'>
                             <p className='text-4xl fw-600'>Achieve your financial goals through savings</p>
-                            <p className='text-[#6B778C] lg:fs-700 mt-5 lg:w-10/12'>Start saving for the life you envision. Our goal savings feature empowers you to save towards your aspirations, whether it's education, travel, medical expenses, or any other purpose that matters to you. </p>
+                            <p className='text-[#6B778C] lg:fs-700 mt-5 lg:w-10/12'>Start saving for the life you envision. Our goal savings feature empowers you to save towards your aspirations, whether it&apos;s education, travel, medical expenses, or any other purpose that matters to you. </p>
                         </div>
                         <p className='flex'>
                             <Link href='/' className='flex items-center fs-400 text-primary'>

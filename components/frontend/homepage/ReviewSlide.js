@@ -45,15 +45,15 @@ const ReviewSlide = () => {
             </div>
             <div className="mt-6 text-left">
               <p className="lg:fs-700 text-[#666D80] relative z-10">
-                Stash has truly simplified my financial life. I've tried
+                Stash has truly simplified my financial life. I&apos;ve tried
                 numerous banking apps before, but none have come close to the
-                seamless experience I've had with Stash. From the moment I
+                seamless experience I&apos;ve had with Stash. From the moment I
                 signed up, I was impressed by the clear and concise interface.
-                Whether I'm spending, saving, or borrowing, Stash provides the
-                tools and guidance I need to make informed decisions. It's like
-                having a personal financial advisor in my pocket. I highly
-                recommend Stash to anyone looking for a hassle-free banking
-                solution.
+                Whether I&apos;m spending, saving, or borrowing, Stash provides
+                the tools and guidance I need to make informed decisions.
+                It&apos;s like having a personal financial advisor in my pocket.
+                I highly recommend Stash to anyone looking for a hassle-free
+                banking solution.
               </p>
               <p className="fs-800 fw-600 mt-8">Anuoluwapo Oluwagbayela</p>
               <p className="mt-3 text-[#666D80]">Chartered Account</p>
@@ -69,7 +69,7 @@ const ReviewSlide = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className="lg:flex items-center justify-between">
+        <div className="lg:flex items-center justify-between">
           <div className="lg:w-5/12">
             <Image
               src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1686740626/Stash/Group_48096851_o5nikt.png"
@@ -94,7 +94,15 @@ const ReviewSlide = () => {
             </div>
             <div className="mt-6 text-left">
               <p className="lg:fs-700 text-[#666D80] relative z-10">
-              I've been using Stash for over 2 years months now, and it has completely transformed the way I manage my money. With Stash, I can effortlessly spend, save, borrow, and keep track of my finances all in one place. The user experience is incredibly smooth and intuitive, making it a breeze to navigate through the app. Stash has truly simplified my financial life and given me peace of mind. I highly recommend it to anyone looking for a digital banking solution that puts convenience and control at the forefront.
+                I&apos;ve been using Stash for over 2 years months now, and it
+                has completely transformed the way I manage my money. With
+                Stash, I can effortlessly spend, save, borrow, and keep track of
+                my finances all in one place. The user experience is incredibly
+                smooth and intuitive, making it a breeze to navigate through the
+                app. Stash has truly simplified my financial life and given me
+                peace of mind. I highly recommend it to anyone looking for a
+                digital banking solution that puts convenience and control at
+                the forefront.
               </p>
               <p className="fs-800 fw-600 mt-8">Mr. Taiwo Yakub</p>
               <p className="mt-3 text-[#666D80]">Realtor</p>
@@ -110,7 +118,7 @@ const ReviewSlide = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-      <div className="lg:flex pb-12 lg:pb-0 items-center justify-between">
+        <div className="lg:flex pb-12 lg:pb-0 items-center justify-between">
           <div className="lg:w-5/12">
             <Image
               src="https://res.cloudinary.com/greenmouse-tech/image/upload/v1686740626/Stash/Group_48096852_df3ojr.png"
@@ -135,7 +143,16 @@ const ReviewSlide = () => {
             </div>
             <div className="mt-6 text-left">
               <p className="lg:fs-700 text-[#666D80] relative z-10">
-              Stash has been a game-changer for me when it comes to managing my finances. As someone who always found money management overwhelming, Stash has made it incredibly easy and accessible. I love how I can seamlessly spend, save, and even borrow money whenever I need to. The interface is clean, user-friendly, and packed with helpful features. Stash has truly made financial empowerment a reality for me, and I can't imagine going back to traditional banking. If you're looking for a digital bank that streamlines your financial life, Stash is the way to go!
+                Stash has been a game-changer for me when it comes to managing
+                my finances. As someone who always found money management
+                overwhelming, Stash has made it incredibly easy and accessible.
+                I love how I can seamlessly spend, save, and even borrow money
+                whenever I need to. The interface is clean, user-friendly, and
+                packed with helpful features. Stash has truly made financial
+                empowerment a reality for me, and I can&apos;t imagine going
+                back to traditional banking. If you&apos;re looking for a
+                digital bank that streamlines your financial life, Stash is the
+                way to go!
               </p>
               <p className="fs-800 fw-600 mt-8">Mr. Kenneth Ugama</p>
               <p className="mt-3 text-[#666D80]">Entrepreneur</p>
