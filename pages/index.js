@@ -1,12 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Layout from '@/components/layouts/homepage/Layout'
-import HeroBanner from '@/components/frontend/homepage/features/HeroBanner'
-import Future from '@/components/frontend/homepage/features/Future'
-import Features from '@/components/frontend/homepage/features/Features'
-import Reviews from '@/components/frontend/homepage/features/Reviews'
-import DownloadApp from '@/components/frontend/homepage/features/Download'
+import HeroBanner from '@/components/frontend/homepage/HeroBanner'
+import Future from '@/components/frontend/homepage/Future'
+import Features from '@/components/frontend/homepage/Features'
+import Reviews from '@/components/frontend/homepage/Reviews'
+import DownloadApp from '@/components/frontend/homepage/Download'
 
 const inter = Inter({ subsets: ['latin'] })
 

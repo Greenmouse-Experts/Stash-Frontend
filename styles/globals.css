@@ -3,19 +3,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
+@font-face {
   font-family: "GeneralSans";
-  src: url('../public/fonts/GeneralSans-Variable.woff');
+  src: url('../public/fonts/GeneralSans-Variable.ttf');
   font-weight: normal;
   font-style: normal;
-} */
+}
+@font-face {
+  font-family: "BoldSans";
+  src: url('../public/fonts/GeneralSans-Variable.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+body{
+  font-family: "GeneralSans", sans-serif;
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-body{
-  background: #F7F6F0;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -68,6 +74,15 @@ a {
 input:focus-within {
   background: transparent !important;
   /* and any style you want to reset */
+}
+.swiper-pagination-bullet {
+  background-color: red;
+  opacity: 1;
+  width: 15px !important;
+  height: 15px !important;
+}
+.fws-bold{
+  font-family: "BoldSans", sans-serif;
 }
 @layer components {
   .box {
@@ -272,5 +287,11 @@ input:focus-within {
   }
   .index-50{
     z-index: 50000;
+  }
+  .text-blue{
+    color:  rgba(141, 126, 255, .7) ;
+  }
+  .bg-fit{
+    background-size: 100% 100%;
   }
 }
