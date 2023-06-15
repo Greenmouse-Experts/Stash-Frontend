@@ -6,7 +6,7 @@ import ContactForm from "../../components/frontend/contact/ContactForm";
 const SpendPage = () => {
   return (
     <Layout>
-      <div className="h-[200px] lg:h-[450px] bg-contact bg-fit"></div>
+      <div className="h-[180px] lg:h-[450px] bg-contact bg-fit"></div>
       <div className="box my-16">
         <div className="lg:w-11/12 grid lg:grid-cols-2 items-center gap-x-24 gap-y-12 mx-auto">
             <div>

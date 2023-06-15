@@ -28,16 +28,16 @@ const SpendPage = () => {
           <p className="mt-3 text-2xl lg:text-5xl fws-bold">
             Frequently Asked Questions
           </p>
-          <p className="text-[#666D80] w-5/12 mx-auto mt-3">
+          <p className="text-[#666D80] lg:w-5/12 mx-auto mt-3">
             These are some of the questions we have answered for many of our
             customers over the years.
           </p>
         </div>
         <div className="mt-8">
-          <div className="py-6 border-y border-[#E0E0E0]">
-            <ul className="flex justify-center gap-x-12 fw-600">
+          <div className="py-6 border-y border-[#E0E0E0] w-full overflow-x-auto">
+            <ul className="w-[420px] md:w-auto flex justify-center gap-x-5 lg:gap-x-12 fw-600">
               <li
-              className="cursor-pointer"
+              className="cursor-pointer whitespace-nowrap"
                 style={open === 1 ? activeStyle : undefined}
                 onClick={() => handleOpen(1)}
               >
