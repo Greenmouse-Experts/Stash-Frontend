@@ -65,10 +65,10 @@ const Footer = () => {
                     <Link href="/about">About us</Link>
                   </li>
                   <li className=" mt-3">
-                    <Link href="/">Join Our Team</Link>
+                    <Link href="/join-team">Join Our Team</Link>
                   </li>
                   <li className=" mt-3">
-                    <Link href="/">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                   </li>
                 </ul>
               </div>
@@ -76,10 +76,10 @@ const Footer = () => {
                 <p className="fw-600 text-black mb-5 mt-2">Support</p>
                 <ul>
                   <li className="">
-                    <Link href="/">FAQs</Link>
+                    <Link href="/faq">FAQs</Link>
                   </li>
                   <li className=" mt-3">
-                    <Link href="/">Contact us</Link>
+                    <Link href="/contact">Contact us</Link>
                   </li>
                 </ul>
               </div>
